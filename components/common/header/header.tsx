@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 import { menu } from "../../static/menu";
 
 const Header=()=>{
@@ -11,7 +9,7 @@ const Header=()=>{
 
                     {menu.map((data,index)=>(
                         <li key={index}>
-                            <Link href={data.route}> {data.name} </Link>
+                            <h5> {data.name} </h5>
                         </li>
                     ))}
                     <button className=" bg-[#ffdc80] p-5"> Download portfolio </button>

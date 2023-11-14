@@ -1,18 +1,14 @@
 export const menu=[
     {
-        name:"Home",
-        route:"/"
+        name:"Home"
     },
     {
-        name:"About",
-        route:"/about"
+        name:"About"
     },
     {
-        name:"Projects",
-        route:"/projects"
+        name:"Projects"
     },
     {
-        name:"Skills",
-        route:"/skills"
+        name:"Skills"
     }
 ]
