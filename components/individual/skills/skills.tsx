@@ -9,7 +9,7 @@ const Skills = () => {
                     <img src="/Images/skillsPic.jpg" className="w-full" />
                 </div>
                 <div className="mt-10 pl-[150px]">
-                    <div className="bg-[#ffdc80] pt-5 pb-14 pr-10 pl-[25%] flex-1 mt-[100px]">
+                    <div className="bg-[#ffdc80] pt-5 pb-20 pr-10 pl-[25%] flex-1 mt-[100px]">
                         {skills.map((skill, index) => (
                             <div key={index} className="mt-10">
                                 <div className="flex justify-between items-center" key={index}>
@@ -19,7 +19,7 @@ const Skills = () => {
 
 
                                 <div className="w-full h-2 mt-1 bg-white relative">
-                                    <div className={`w-[${skill.percentage}%] h-2 bg-black`}/>
+                                    <div className={`${skill.percentage === 90 ? 'w-[90%]' : skill.percentage === 80 ? 'w-[80%]':skill.percentage===70?'w-[70%]':skill.percentage===60 && 'w-[60%]'} h-2 bg-black`}/>
                                 </div>
                             </div>
                         ))}
