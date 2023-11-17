@@ -5,6 +5,9 @@ import Projects from "../../components/individual/projects/projects";
 import Skills from "../../components/individual/skills/skills";
 import Footer from "../../components/common/footer/footer";
 
+import '@fortawesome/fontawesome-free/css/all.min.css';
+ 
+
 const Page = () => {
   return (
     <>  

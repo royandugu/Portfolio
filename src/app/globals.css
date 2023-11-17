@@ -2,6 +2,89 @@
 @tailwind components;
 @tailwind utilities;
 
+/* styles/globals.css */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css');
+
+.icon-arrow_left:before {
+  content: "\e901"
+}
+
+.icon-arrow_down:before {
+  content: "\e913"
+}
+
+.icon-comment:before {
+  content: "\e914"
+}
+
+.icon-inbox:before {
+  content: "\e912"
+}
+
+.icon-minus:before {
+  content: "\e903"
+}
+
+.icon-plus:before {
+  content: "\e904"
+}
+
+.icon-arrow_right:before {
+  content: "\e909"
+}
+
+.icon-arrow_up:before {
+  content: "\e911"
+}
+
+.icon-chevron_right:before {
+  content: "\e902"
+}
+
+.icon-check:before {
+  content: "\e90a"
+}
+
+.icon-play:before {
+  content: "\e900"
+}
+
+.icon-call:before {
+  content: "\e90c"
+}
+
+.icon-location:before {
+  content: "\e90b"
+}
+
+.icon-star:before {
+  content: "\e90e"
+}
+
+.icon-bookmark:before {
+  content: "\e90f"
+}
+
+.icon-search:before {
+  content: "\e910"
+}
+
+.icon-whatsapp:before {
+  content: "\e905"
+}
+
+.icon-twitter:before {
+  content: "\e906"
+}
+
+.icon-instagram:before {
+  content: "\e907"
+}
+
+.icon-facebook:before {
+  content: "\e908"
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -18,3 +101,4 @@
 .addTransition{
   transition: .25s ease-in-out;
 }
+
