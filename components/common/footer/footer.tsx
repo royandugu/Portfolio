@@ -5,14 +5,14 @@ import Logo from "../widgets/logo";
 import Link from "next/link";
 const Footer = () => { 
     return (
-        <main className="bg-[#363636] mt-40 pb-20">
-            <section className="flex pl-[7.9%] pt-14">
+        <main className="bg-[#363636] mt-40">
+            <section className="pb-20 flex pl-[7.9%] pt-14">
                 <div className="w-1/3 pr-10">
                     <div className="bg-black text-center p-7 flex flex-col items-center">
                         <Logo inverse={true} />
-                        <p className="mt-10 font-bold text-white">I thrive on turning ideas into efficient and scalable software solutions.</p>
+                        <p className="mt-10 font-bold text-white">I thrive on turning ideas into efficient and scalable software solutions. My love for coding extends to both the front-end and back-end, allowing me to create seamless and responsive web applications.</p>
                         <h1 className="text-[20px] mt-5 font-bold text-white"> Follow me </h1>
-                        <div className="flex mt-3 gap-2">
+                        <div className="flex mt-3 gap-2 mb-3">
                             <i className="icon-facebook"></i>
                             <i className="icon-whatsapp"></i>
                         </div>

@@ -1,7 +1,6 @@
 import { projects } from "../../static/projects";
 
 const Projects=()=>{
-
     return(
         <main className="pt-32 pl-[7.9%]">
             <section>
