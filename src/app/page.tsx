@@ -1,24 +1,12 @@
-import Header from "../../components/common/header/header";
-import Home from "../../components/individual/home/home";
-import About from "../../components/individual/about/about";
-import Projects from "../../components/individual/projects/projects";
-import Skills from "../../components/individual/skills/skills";
-import Footer from "../../components/common/footer/footer";
-
-import '@fortawesome/fontawesome-free/css/all.min.css';
- 
+import Header from "@/components/header/header";
+import Hero from "../components/hero/hero";
 
 const Page = () => {
   return (
-    <>  
-      <Header />
-      <Home/>
-      <About/>
-      <Projects/>
-      <Skills/>
-      <Footer/>
-    </>
-
+    <main> 
+      <Header/>
+      <Hero/>
+    </main>
   )
 }
 export default Page;
