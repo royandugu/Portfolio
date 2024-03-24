@@ -1,0 +1,24 @@
+.hero{
+    color:white;
+}
+.hero h1{
+    color:white;
+    font-size: 8rem;
+    font-family: "Nunito-Bold";
+    margin-left:-10px;
+}
+.hero h5{
+    font-size:3.2rem;
+    font-family: "Nunito-Bold";
+}
+.hero p{
+    font-size:1.5rem;
+}
+.iconContainer>*{
+    color:rgb(200,200,200);
+    font-size:30px;
+    cursor: pointer;
+}
+.iconContainer>*:hover{
+    color:white;
+}

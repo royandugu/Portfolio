@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: "Nunito-Regular";
+    font-display: swap;
+    src: url("../Fonts/Nunito-Regular.ttf") format("woff2");
+}
+@font-face {
+    font-family: "Nunito-Bold";
+    font-display: swap;
+    src: url("../Fonts/Nunito-Bold.ttf") format("woff2");
+}
+
+
+h1,h2,h3,h4,h5,h6,p{
+    font-family: "Nunito-Regular";
+}
 section{
     padding-top:5rem;
     padding-bottom:5rem;
