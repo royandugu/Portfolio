@@ -22,3 +22,14 @@
 .iconContainer>*:hover{
     color:white;
 }
+.lineAnimation{
+    animation: animateLine 3s linear infinite alternate;
+}
+@keyframes animateLine {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 30%;
+    }
+}

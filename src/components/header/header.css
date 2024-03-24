@@ -1,3 +1,9 @@
+.header{
+    z-index: 2;
+}
+.header,.header>*{
+    transition: .4s ease-in-out;
+}
 .header ul li{
     font-size:1.3rem;
     position: relative;

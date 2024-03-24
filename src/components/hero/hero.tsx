@@ -8,11 +8,11 @@ import "./hero.css";
 const Hero = () => {
     return (
         <section className="hero">
-            <div className="flex items-center justify-between pt-60">
+            <div className="flex items-center justify-between pt-64 pb-10">
                 <div>
                     <h1 data-aos="fade-right"> Royan</h1>
                     <h1 data-aos="fade-right" className="leading-[50px] shadow-xl"> Dugu. </h1>
-                    <div className="mt-10 h-[10px] w-1/6 bg-ternary" data-aos="fade-right"/>
+                    <div className="mt-10 h-[10px] bg-ternary lineAnimation" data-aos="fade-right"/>
                     <div className="iconContainer mt-32 flex gap-5" data-aos="fade-up">
                         <FaFacebookSquare />
                         <FaWhatsapp />
