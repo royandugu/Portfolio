@@ -7,7 +7,11 @@ export const menu=[
 ]
 
 export const services=[
-    "Development",
-    "Designing",
+    "Design",
+    "Deploy",
     "API",
+    "CMS",
+    "Portal",
+    "Socket"
 ]
+

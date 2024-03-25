@@ -40,12 +40,12 @@ const About = () => {
                         <p className="text-ternary" data-aos="fade-right"> - Education </p>
                         <p className="mt-6 text-[rgb(200,200,200)]" data-aos="fade-right"> With years of hands-on experience in the dynamic realm of web development, I specialize in creating robust, scalable, and visually stunning web applications.</p>
                         <p className="text-ternary mt-10" data-aos="fade-right"> - Framework Expertise </p>
-                        {languageExpertise.map(lg => (
-                            <div className="h-[20px] mt-5 w-[90%] bg-primary">
+                        {languageExpertise.map((lg,index:number) => (
+                            <div key={index} className="h-[20px] mt-5 w-[90%] bg-primary">
                                 <div className={`h-[20px] bg-ternary w-[50%]`} data-aos="fade-left">
                                 </div>
                             </div>
-                        ))}
+                        ))} 
                     </div>
                     <div className="w-1/2 pl-20">
                         <div className="border-2 border-ternary w-full" data-aos="fade-left">
