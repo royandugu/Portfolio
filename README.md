@@ -13,3 +13,7 @@ Footer
 
 ## Primary color
 #ffdc80
+
+
+## Refactoring notes:
+In how I work, it can be done in terms of loop ? 

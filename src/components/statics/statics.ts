@@ -3,5 +3,11 @@ export const menu=[
     "About me",
     "How I work",
     "Services",
-    "Portfolio"
+    "Projects"
+]
+
+export const services=[
+    "Development",
+    "Designing",
+    "API",
 ]

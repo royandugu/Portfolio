@@ -14,10 +14,23 @@
 }
 
 
-h1,h2,h3,h4,h5,h6,p{
-    font-family: "Nunito-Regular";
+h1,h2,h3,h4,h5,h6{
+    font-family: "Nunito-Bold";
+    color:white;
 }
-section{
+h1{
+    font-size: 8rem;
+    margin-left:-10px;
+}
+h5{
+    font-size:3.2rem;
+}
+p{
+    font-family: "Nunito-Regular";
+    font-size:1.5rem;
+    color:white;
+}
+section,header{
     padding-top:5rem;
     padding-bottom:5rem;
     padding-left:10rem;
