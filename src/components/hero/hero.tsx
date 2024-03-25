@@ -24,7 +24,7 @@ const Hero = () => {
                     <p className="text-[rgb(200,200,200)]" data-aos="fade-left"> - Introduction </p>
                     <h5 className="mt-6 leading-[60px]" data-aos="fade-left"> Welcome to my World of Web Development Excellence </h5>
                     <p className="mt-6 text-[rgb(200,200,200)]" data-aos="fade-left"> With years of hands-on experience in the dynamic realm of web development, I specialize in creating robust, scalable, and visually stunning web applications.</p>
-                    <p className="text-ternary cursor-pointer mt-11 underline " data-aos="fade-up"> Read more </p>
+                    <p className="text-ternary cursor-pointer mt-11 underline" data-aos="fade-up"> Download CV </p>
                 </div>
             </div>
             <div className="absolute z-[-1] bottom-0 left-[15%] opacity-10 w-[40%] animateTopDown">
