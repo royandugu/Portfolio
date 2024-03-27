@@ -1,6 +1,21 @@
-import AboutSvg from "../svgs/aboutSvg";
+"use client"
+
+import context from '@/context/context';
+
+import { useEffect, useContext } from 'react';
+import { useInView } from 'react-intersection-observer';
 
 const About = () => {
+    const contextContainer=useContext(context);
+
+    const { ref, inView } = useInView({
+        threshold: 0.7,
+    });
+
+    useEffect(()=>{
+        if(inView) contextContainer.setActiveNav(1);
+    },[inView])
+
     const frameworkExpertise = [
         {
             name: "React.JS",
@@ -31,9 +46,9 @@ const About = () => {
         }
     ]
 
-    return (
+    return ( 
         <section>
-            <div className="bg-secondary relative p-20">
+            <div id="about" ref={ref} className="bg-secondary relative p-20">
                 <div className="absolute top-[-30px] left-0 h-[90px] w-[90px] bg-ternary"></div>
                 <div className="flex items-center gap-10">
                     <div className="flex-1">

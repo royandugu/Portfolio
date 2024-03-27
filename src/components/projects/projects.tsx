@@ -1,10 +1,26 @@
+"use client"
+
+import context from '@/context/context';
+
+import { useEffect, useContext } from 'react';
+import { useInView } from 'react-intersection-observer';
 import { FaArrowLeft } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
 
 const Projects = () => {
+    const contextContainer=useContext(context);
+
+    const { ref, inView } = useInView({
+        threshold: 0.7,
+    });
+
+    useEffect(()=>{
+        if(inView) contextContainer.setActiveNav(4);
+    },[inView])
+
     return (
-        <section className="relative">
-            <div className="flex items-center justify-between">
+        <section id="projects" className="relative">
+            <div ref={ref} className="flex items-center justify-between">
                 <div>
                     <p className="text-ternary" data-aos="fade-right"> Here are some of my </p>
                     <h5 data-aos="fade-right"> Projects </h5>

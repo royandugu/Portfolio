@@ -1,9 +1,25 @@
+"use client"
+
+import context from '@/context/context';
+
+import { useEffect, useContext } from 'react';
+import { useInView } from 'react-intersection-observer';
+
 const HowIWork=()=>{
+    const contextContainer=useContext(context);
+
+    const { ref, inView } = useInView({
+        threshold: 0.7,
+    });
+
+    useEffect(()=>{
+        if(inView) contextContainer.setActiveNav(2);
+    },[inView])
+
     return(
-        <section data-aos="fade-right">
+        <section id="howIWork" data-aos="fade-right">
             <h5 className="text-center"> How I Work <span className="text-ternary">?</span></h5>
-           
-            <div className="flex items-center gap-20 mt-20">
+            <div ref={ref} className="flex items-center gap-20 mt-20">
                 <div className="w-1/2" data-aos="fade-right">
                     <img src="./Images/collaboration.svg"/>
                 </div>

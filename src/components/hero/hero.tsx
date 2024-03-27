@@ -1,14 +1,32 @@
+"use client"
+
+import { useEffect } from "react";
+import { useInView } from 'react-intersection-observer';
+
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
+import { useContext } from "react";
+
+import context from "@/context/context";
 
 import "./hero.css";
 
 const Hero = () => {
+    const contextContainer=useContext(context);
+
+    const { ref, inView } = useInView({
+        threshold: 0.5,
+    });
+
+    useEffect(()=>{
+        if(inView) contextContainer.setActiveNav(0);
+    },[inView])
+
     return (
-        <section className="hero relative h-[100vh]">
-            <div className="flex items-center justify-between pt-64 pb-10">
+        <section id="hero" className="hero relative h-[100vh]">
+            <div ref={ref} className="flex items-center justify-between pt-64 pb-10">
                 <div> 
                     <h1 data-aos="fade-right"> Royan</h1>
                     <h1 data-aos="fade-right" className="leading-[50px] shadow-xl"> Dugu. </h1>

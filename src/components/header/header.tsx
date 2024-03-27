@@ -2,16 +2,19 @@
 
 import { FaCode } from "react-icons/fa";
 import { menu } from "../statics/statics";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
+import Link from "next/link";
+
+import context from "@/context/context";
 
 import "./header.css";
 
 const Header = () => {
   const [scrolledDown, setScrolledDown] = useState(false);
+  const contextContainer=useContext(context);
 
   useEffect(() => {
     function handleScroll() {
-      // Check if user scrolled down a little
       if (window.scrollY > 50) {
         setScrolledDown(true);
       } else {
@@ -33,7 +36,9 @@ const Header = () => {
         <div className="w-1/2 pl-20 flex justify-end" data-aos="fade-left">
           <ul className="flex text-white w-full justify-between">
             {menu.map((content, index: number) => (
-              <li key={index} className={`${index === 0 && 'selected'} cursor-pointer text-[rgb(200,200,200)] hover:text-white`}> {content} </li>
+              <li key={index} className={`${index === contextContainer.activeNav && 'selected'} cursor-pointer text-[rgb(200,200,200)] hover:text-white`}> 
+               <Link href={`#${content.url}`} scroll={true}>{content.text}</Link> 
+              </li>
             ))}
           </ul>
         </div>

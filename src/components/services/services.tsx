@@ -1,3 +1,11 @@
+"use client"
+
+import context from '@/context/context';
+
+import { useEffect, useContext } from 'react';
+import { useInView } from 'react-intersection-observer';
+
+
 import { services } from "../statics/statics";
 import { MdDesignServices } from "react-icons/md";
 import { GiCargoCrate } from "react-icons/gi";
@@ -10,9 +18,20 @@ import { FiCornerDownRight } from "react-icons/fi";
 import "./services.css";
 
 const Services=()=>{
+    
+    const contextContainer=useContext(context);
+
+    const { ref, inView } = useInView({
+        threshold: 0.5,
+    });
+
+    useEffect(()=>{
+        if(inView) contextContainer.setActiveNav(3);
+    },[inView])
+
     return(
-        <section>
-            <div className="bg-secondary">
+        <section id="services">
+            <div ref={ref} className="bg-secondary">
                 <div className="flex gap-20 p-20">
                     <div>
                         <p className="text-ternary" data-aos="fade-right"> Here are some of my </p>
