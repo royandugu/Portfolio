@@ -5,7 +5,7 @@
     transition: .4s ease-in-out;
 }
 .header ul li{
-    font-size:1.3rem;
+    font-size:1rem;
     position: relative;
     font-family: "Nunito-Bold";
 }
@@ -22,4 +22,10 @@
     width:10px;
     border-radius: 50%;
     background:#ffce8a;
+}
+
+@media (min-width: 1450px) {
+    .header ul li{
+        font-size: 1.3rem;
+    }
 }

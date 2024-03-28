@@ -33,17 +33,17 @@ const Header = () => {
     <header className={`header fixed bg-primary top-0 left-0 right-0 ${scrolledDown && 'py-5'}`}>
       <div className="flex justify-between items-center">
         <FaCode className="text-ternary text-8xl" data-aos="fade-right" />
-        <div className="w-1/2 pl-20 flex justify-end" data-aos="fade-left">
-          <ul className="flex text-white w-full justify-between">
+        <div className="w-1/2 pl-20 flex" data-aos="fade-left">
+          <ul className="hidden xl:flex text-white w-full justify-between">
             {menu.map((content, index: number) => (
               <li key={index} className={`${index === contextContainer.activeNav && 'selected'} cursor-pointer text-[rgb(200,200,200)] hover:text-white`}> 
                <Link href={`#${content.url}`} scroll={true}>{content.text}</Link> 
-              </li>
+              </li> 
             ))}
           </ul>
         </div>
       </div>
-    </header>
+    </header> 
   )
 }
 export default Header;
