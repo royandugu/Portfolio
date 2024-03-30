@@ -26,7 +26,7 @@ const Hero = () => {
 
     return (
         <section id="hero" className="hero relative">
-            <div ref={ref} className="flex items-center justify-between pt-64 pb-10">
+            <div ref={ref} className="flex flex-col md:flex-row items-center justify-between pt-64 pb-10">
                 <div> 
                     <h1 data-aos="fade-right"> Royan</h1>
                     <h1 data-aos="fade-right" className="leading-[50px] shadow-xl"> Dugu. </h1>
@@ -40,7 +40,7 @@ const Hero = () => {
                 </div>
                 <div className="w-1/2 pl-20">
                     <p className="text-[rgb(200,200,200)]" data-aos="fade-left"> - Introduction </p>
-                    <h5 className="mt-6 leading-[60px]" data-aos="fade-left"> Welcome to my World of Web Development Excellence </h5>
+                    <h5 className="mt-6 leading-[50px] brk1:leading-[60px]" data-aos="fade-left"> Welcome to my World of Web Development Excellence </h5>
                     <p className="mt-6 text-[rgb(200,200,200)]" data-aos="fade-left"> With years of hands-on experience in the dynamic realm of web development, I specialize in creating robust, scalable, and visually stunning web applications.</p>
                     <p className="text-ternary cursor-pointer mt-11 underline" data-aos="fade-up"> Download CV </p>
                 </div>
