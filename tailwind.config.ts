@@ -5,6 +5,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens:{
+        'brk1':'900px',
+        'brk2':'1300px'
+      },
       colors: {
         'primary': '#232738',
         'secondary': '#303551',

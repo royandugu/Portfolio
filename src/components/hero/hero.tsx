@@ -25,7 +25,7 @@ const Hero = () => {
     },[inView])
 
     return (
-        <section id="hero" className="hero relative h-[100vh]">
+        <section id="hero" className="hero relative">
             <div ref={ref} className="flex items-center justify-between pt-64 pb-10">
                 <div> 
                     <h1 data-aos="fade-right"> Royan</h1>

@@ -36,7 +36,25 @@ p{
 section,header,footer{
     padding-top:5rem;
     padding-bottom:5rem;
-    padding-left:10rem;
-    padding-right:10rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
 } 
 
+
+/*Media queries*/
+
+/* Media query for screens between 768px and 1536px */
+@media screen and (min-width: 900px) and (max-width: 1536px) {
+    section, header, footer {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+}
+/* Media query for screens larger than or equal to 1536px */
+@media (min-width: 1536px) {
+    section, header, footer {
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+    /* Additional styles for elements within the header */
+}

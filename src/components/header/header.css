@@ -1,31 +1,49 @@
-.header{
+.header {
     z-index: 2;
 }
-.header,.header>*{
+
+.header,
+.header>* {
     transition: .4s ease-in-out;
 }
-.header ul li{
-    font-size:1rem;
+
+.header ul li {
+    font-size: 1.1rem;
     position: relative;
     font-family: "Nunito-Bold";
 }
-.header .selected{
-    color:white;
-}
-.header .selected::after{
-    content: '';
-    position: absolute;
-    bottom:-15px;
-    left:50%;
-    right:0;
-    height:10px;
-    width:10px;
-    border-radius: 50%;
-    background:#ffce8a;
+
+.header .selected {
+    color: white;
 }
 
-@media (min-width: 1450px) {
-    .header ul li{
+.header .selected::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    right: 0;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background: #ffce8a;
+}
+
+/*Media queries*/
+@media (min-width: 1536px) {
+    .header ul li {
         font-size: 1.3rem;
+    }
+}
+
+@media (max-width:1300px) {
+    .bigMenu {
+        display: none;
+    }
+}
+
+@media (min-width:1300px) {
+    .smallMenu {
+        display: none;
     }
 }
