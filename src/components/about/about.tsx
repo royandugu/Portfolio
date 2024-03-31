@@ -48,10 +48,10 @@ const About = () => {
 
     return ( 
         <section>
-            <div id="about" ref={ref} className="bg-secondary relative p-20">
+            <div id="about" ref={ref} className="bg-secondary relative p-20 pl-10 pr-10 md:pl-20 md:pr-20 ">
                 <div className="absolute top-[-30px] left-0 h-[90px] w-[90px] bg-ternary"></div>
-                <div className="flex items-center gap-10">
-                    <div className="flex-1">
+                <div className="flex flex-col-reverse md:flex-row items-center gap-10">
+                    <div className="md:flex-1">
                         <p className="text-ternary" data-aos="fade-right"> - Education </p>
                         <p className="mt-6 text-[rgb(200,200,200)]" data-aos="fade-right"> With years of hands-on experience in the dynamic realm of web development, I specialize in creating robust, scalable, and visually stunning web applications.</p>
                         <p className="text-ternary mt-10" data-aos="fade-right"> - Framework Expertise </p>
@@ -62,7 +62,7 @@ const About = () => {
                             </div>
                         ))} 
                     </div>
-                    <div className="w-1/2 pl-20">
+                    <div className="md:w-1/2 md:pl-20">
                         <div className="border-2 border-ternary w-full" data-aos="fade-left">
                             <img src="./Images/myPhoto.jpg" className="w-full" />
                         </div>

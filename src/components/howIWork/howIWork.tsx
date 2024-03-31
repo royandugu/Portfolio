@@ -19,7 +19,7 @@ const HowIWork=()=>{
     return(
         <section id="howIWork" data-aos="fade-right">
             <h5 className="text-center"> How I Work <span className="text-ternary">?</span></h5>
-            <div ref={ref} className="flex items-center gap-20 mt-20">
+            <div ref={ref} className="flex flex-col md:flex-row items-center gap-20 mt-20">
                 <div className="flex-1 w-1/2" data-aos="fade-right">
                     <img src="./Images/collaboration.svg"/>
                 </div>
@@ -29,7 +29,7 @@ const HowIWork=()=>{
                 </div>
             </div>
 
-            <div className="flex items-center gap-20 mt-20">
+            <div className="flex flex-col-reverse md:flex-row items-center gap-20 mt-20">
                 <div className="flex-1" data-aos="fade-right">
                     <p className="text-[rgb(200,200,200)]"> - Design </p>
                     <p className="mt-10"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta maxime ratione facere incidunt, molestias ad nemo cum, laudantium sunt aperiam dolorem quasi voluptatum commodi beatae ut iste amet illo eos?</p>
@@ -39,7 +39,7 @@ const HowIWork=()=>{
                 </div>
             </div>
 
-            <div className="flex items-center gap-20 mt-20">
+            <div className="flex flex-col md:flex-row items-center gap-20 mt-20">
                 <div className="w-1/2" data-aos="fade-right">
                     <img src="./Images/coding.svg"/>
                 </div>
@@ -49,7 +49,7 @@ const HowIWork=()=>{
                 </div>
             </div>
 
-            <div className="flex items-center gap-20 mt-20">
+            <div className="flex flex-col-reverse md:flex-row items-center gap-20 mt-20">
                 <div className="flex-1" data-aos="fade-right">
                     <p className="text-[rgb(200,200,200)]"> - Testing </p>
                     <p className="mt-10"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta maxime ratione facere incidunt, molestias ad nemo cum, laudantium sunt aperiam dolorem quasi voluptatum commodi beatae ut iste amet illo eos?</p>
@@ -59,7 +59,7 @@ const HowIWork=()=>{
                 </div>
             </div>
 
-            <div className="flex items-center gap-20 mt-20">
+            <div className="flex flex-col md:flex-row items-center gap-20 mt-20">
                 <div className="w-1/2" data-aos="fade-right">
                     <img src="./Images/review.svg"/>
                 </div>
