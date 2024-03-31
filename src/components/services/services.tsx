@@ -8,6 +8,8 @@ import { useInView } from 'react-intersection-observer';
 
 import { services } from "../statics/statics";
 import { MdDesignServices } from "react-icons/md";
+import { MdAnimation } from "react-icons/md";
+import { GrOptimize } from "react-icons/gr";
 import { GiCargoCrate } from "react-icons/gi";
 import { AiTwotoneApi } from "react-icons/ai";
 import { SiDatocms } from "react-icons/si";
@@ -42,7 +44,7 @@ const Services = () => {
                         {services.map((ser, index: number) => (
                             <div key={index} className="servicesContainer group border-2 hover:bg-white serviceContainer cursor-pointer w-[30%] flex flex-col justify-center items-center gap-5 border-white p-20">
 
-                                {index === 0 ? <h5 className="group-hover:text-black"><MdDesignServices /></h5> : index === 1 ? <h5 className="group-hover:text-black"><GiCargoCrate /></h5> : index === 2 ? <h5 className="group-hover:text-black"><AiTwotoneApi /></h5> : index === 3 ? <h5 className="group-hover:text-black"><SiDatocms /></h5> : index === 4 ? <h5 className="group-hover:text-black"><GiMagicPortal /></h5> : <h5 className="group-hover:text-black"><TbBrandSocketIo /></h5>}
+                                {index === 0 ? <h5 className="group-hover:text-black"><MdDesignServices /></h5> : index === 1 ? <h5 className="group-hover:text-black"><GiCargoCrate /></h5> : index === 2 ? <h5 className="group-hover:text-black"><MdAnimation/></h5> : index === 3 ? <h5 className="group-hover:text-black"><GrOptimize /></h5> : index === 4 ? <h5 className="group-hover:text-black"><AiTwotoneApi /></h5> : index === 5 ? <h5 className="group-hover:text-black"><SiDatocms /></h5> : index === 6 ? <h5 className="group-hover:text-black"><GiMagicPortal /></h5> :<h5 className="group-hover:text-black"><TbBrandSocketIo /></h5>}
 
 
                                 <h5 className=" group-hover:text-black text-[30px]"> {ser} </h5>

@@ -18,15 +18,18 @@ export const menu=[
     {
         text:"Projects",
         url:"projects"
-    }
+    },
+    
 ]
 
 export const services=[
     "Design",
     "Deploy",
+    "Animate",
+    "Optimize",
     "API",
     "CMS",
     "Portal",
-    "Socket"
+    "Socket",
 ]
 
