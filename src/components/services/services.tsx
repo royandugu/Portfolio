@@ -34,15 +34,15 @@ const Services = () => {
     return (
         <section id="services">
             <div ref={ref} className="bg-secondary">
-                <div className="p-20">
+                <div className="p-20 pl-10 pr-10 brk2:pl-20 brk2:pr-20">
                     <div className="flex-1 gap-10 flex flex-wrap">
-                        <div className='w-[30%]'>
+                        <div className='w-full md:w-[28%] brk2:w-[30%]'>
                             <p className="text-ternary" data-aos="fade-right"> Here are some of my </p>
                             <h5 data-aos="fade-right"> Services </h5>
                             <h5 className="ml-[40%]"><FiCornerDownRight /></h5>
                         </div> 
                         {services.map((ser, index: number) => (
-                            <div key={index} className="servicesContainer group border-2 hover:bg-white serviceContainer cursor-pointer w-[30%] flex flex-col justify-center items-center gap-5 border-white p-20">
+                            <div key={index} className="servicesContainer group border-2 hover:bg-white serviceContainer cursor-pointer w-full md:w-[28%] brk2:w-[30%] flex flex-col justify-center items-center gap-5 border-white p-20">
 
                                 {index === 0 ? <h5 className="group-hover:text-black"><MdDesignServices /></h5> : index === 1 ? <h5 className="group-hover:text-black"><GiCargoCrate /></h5> : index === 2 ? <h5 className="group-hover:text-black"><MdAnimation/></h5> : index === 3 ? <h5 className="group-hover:text-black"><GrOptimize /></h5> : index === 4 ? <h5 className="group-hover:text-black"><AiTwotoneApi /></h5> : index === 5 ? <h5 className="group-hover:text-black"><SiDatocms /></h5> : index === 6 ? <h5 className="group-hover:text-black"><GiMagicPortal /></h5> :<h5 className="group-hover:text-black"><TbBrandSocketIo /></h5>}
 

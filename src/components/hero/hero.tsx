@@ -9,6 +9,8 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { useContext } from "react";
 
+import Link from "next/link";
+
 import context from "@/context/context";
 
 import "./hero.css";
@@ -42,7 +44,7 @@ const Hero = () => {
                     <p className="text-[rgb(200,200,200)]" data-aos="fade-left"> - Introduction </p>
                     <h5 className="mt-6 leading-[50px] brk1:leading-[60px]" data-aos="fade-left"> Welcome to my World of Web Development Excellence </h5>
                     <p className="mt-6 text-[rgb(200,200,200)]" data-aos="fade-left"> With years of hands-on experience in the dynamic realm of web development, I specialize in creating robust, scalable, and visually stunning web applications.</p>
-                    <p className="text-ternary cursor-pointer mt-11 underline" data-aos="fade-up"> Download CV </p>
+                    <Link href="./resume.pdf" download={"resume.pdf"}><p className="text-ternary cursor-pointer mt-11 underline" data-aos="fade-up"> Download CV </p></Link>
                 </div>
             </div>
             <div className="absolute z-[-1] bottom-0 left-[15%] opacity-10 w-[40%] animateTopDown">
