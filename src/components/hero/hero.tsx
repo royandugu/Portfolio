@@ -19,7 +19,7 @@ const Hero = () => {
     const contextContainer=useContext(context);
 
     const { ref, inView } = useInView({
-        threshold: 0.5,
+        threshold: 0.2,
     });
 
     useEffect(()=>{
@@ -28,7 +28,7 @@ const Hero = () => {
 
     return (
         <section id="hero" className="hero relative">
-            <div ref={ref} className="flex flex-col md:flex-row items-center justify-between pt-40 md:pt-64 pb-10">
+            <div ref={ref} className="flex flex-col md:flex-row md:items-center justify-between pt-40 md:pt-64 pb-10">
                 <div> 
                     <h1 data-aos="fade-right"> Royan</h1>
                     <h1 data-aos="fade-right" className="leading-[50px] shadow-xl"> Dugu. </h1>

@@ -9,7 +9,7 @@ const HowIWork=()=>{
     const contextContainer=useContext(context);
 
     const { ref, inView } = useInView({
-        threshold: 0.7,
+        threshold: 0.3,
     });
 
     useEffect(()=>{
@@ -19,8 +19,8 @@ const HowIWork=()=>{
     return(
         <section id="howIWork" data-aos="fade-right">
             <h5 className="text-center"> How I Work <span className="text-ternary">?</span></h5>
-            <div ref={ref} className="flex flex-col md:flex-row items-center gap-20 mt-20">
-                <div className="flex-1 w-1/2" data-aos="fade-right">
+            <div className="flex flex-col md:flex-row items-center gap-20 mt-20">
+                <div ref={ref} className="flex-1 w-1/2" data-aos="fade-right">
                     <img src="./Images/collaboration.svg"/>
                 </div>
                 <div className="flex-1" data-aos="fade-left">

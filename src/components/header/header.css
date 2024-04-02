@@ -29,6 +29,15 @@
     background: #ffce8a;
 }
 
+.smlMenu{
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: .3s ease-in-out;
+}
+.openSmlMenu{
+    transform: scaleY(1);
+}
+
 /*Media queries*/
 @media (min-width: 1536px) {
     .header ul li {
