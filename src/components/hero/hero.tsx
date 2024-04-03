@@ -34,10 +34,10 @@ const Hero = () => {
                     <h1 data-aos="fade-right" className="leading-[50px] shadow-xl"> Dugu. </h1>
                     <div className="mt-10 h-[10px] bg-ternary lineAnimation" data-aos="fade-right" />
                     <div className="iconContainer mt-10 md:mt-32 flex gap-5" data-aos="fade-up">
-                        <FaFacebookSquare />
-                        <FaWhatsapp />
-                        <FaGithub />
-                        <FaLinkedinIn />
+                        <a href="https://www.facebook.com/royandugu123/" target="_blank"><FaFacebookSquare /></a>
+                        <a href="https://wa.me/9779864460627" target="_blank"><FaWhatsapp /></a>
+                        <a href="https://github.com/royandugu" target="_blank"><FaGithub /></a>
+                        <a href="https://www.linkedin.com/in/royan-dugu-6b7035251/" target="_blank"><FaLinkedinIn /></a>
                     </div>
                 </div>
                 <div className="mt-20 md:mt-0 md:w-1/2 md:pl-20">

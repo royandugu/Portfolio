@@ -4,17 +4,24 @@ import context from '@/context/context';
 
 import { useEffect, useContext } from 'react';
 import { useInView } from 'react-intersection-observer';
+import { FaReact } from "react-icons/fa";
+import { IoLogoNodejs } from "react-icons/io";
+import { SiMongodb } from "react-icons/si";
+import { SiNextdotjs } from "react-icons/si";
+import { FaGitAlt } from "react-icons/fa";
+
+import "./about.css";
 
 const About = () => {
-    const contextContainer=useContext(context);
+    const contextContainer = useContext(context);
 
     const { ref, inView } = useInView({
         threshold: 0.2,
     });
 
-    useEffect(()=>{
-        if(inView) contextContainer.setActiveNav(1);
-    },[inView])
+    useEffect(() => {
+        if (inView) contextContainer.setActiveNav(1);
+    }, [inView])
 
 
     const frameworkExpertise = [
@@ -24,7 +31,7 @@ const About = () => {
         },
         {
             name: "NEXT.JS",
-            per: "80"
+            per: "70"
         },
         {
             name: "Node.JS",
@@ -47,23 +54,28 @@ const About = () => {
         }
     ]
 
-    return ( 
+    return (
         <section>
-            <div id="about" ref={ref} className="bg-secondary relative p-20 pl-10 pr-10 md:pl-20 md:pr-20 ">
+            <div id="about" ref={ref} className="bg-secondary relative p-20 pl-10 pr-10 lg:pl-20 lg:pr-20 ">
                 <div className="absolute top-[-30px] left-0 h-[90px] w-[90px] bg-ternary"></div>
-                <div className="flex flex-col-reverse md:flex-row items-center gap-10">
-                    <div className="md:flex-1">
-                        <p className="text-ternary" data-aos="fade-right"> - Education </p>
-                        <p className="mt-6 text-[rgb(200,200,200)]" data-aos="fade-right"> With years of hands-on experience in the dynamic realm of web development, I specialize in creating robust, scalable, and visually stunning web applications.</p>
-                        <p className="text-ternary mt-10" data-aos="fade-right"> - Framework Expertise </p>
-                        {languageExpertise.map((lg,index:number) => (
-                            <div key={index} className="h-[20px] mt-5 w-[90%] bg-primary">
-                                <div className={`h-[20px] bg-ternary w-[50%]`} data-aos="fade-left">
-                                </div>
-                            </div>
-                        ))} 
+                <div className="flex flex-col-reverse lg:flex-row items-center gap-10">
+                    <div className="lg:flex-1">
+                        <p className="text-ternary text-left" data-aos="fade-right"> - Education </p>
+                        <ol>
+                            <li data-aos="fade-right">Secondary School Leaving Certificate (SLC), GEMS School </li>
+                            <li data-aos="fade-right">Higher Secondary Education (11th and 12th Grade), Himalayan White House, specializing in Physics, Science </li> 
+                            <li data-aos="fade-right">Bachelor's Degree in Software Engineering (Expected Graduation 2024), NCIT, affiliated with Pokhara University </li>
+                        </ol>
+                        <p className="text-ternary mt-10" data-aos="fade-right"> - Techstack </p>
+                        <div className='expertise gap-10 mt-5 flex flex-wrap text-white' data-aos="fade-right">
+                            <a href="https://react.dev/" target="_blank"><FaReact className="hover:text-[#5ed3f3]"/></a>
+                            <a href="https://nodejs.org/en" target="_blank"><IoLogoNodejs className="hover:text-[#509941]"/></a>
+                            <a href="https://www.mongodb.com" target="_blank"><SiMongodb className="hover:text-[#48a23a]"/></a>
+                            <a href="https://nextjs.org/" target="_blank"><SiNextdotjs className="hover:text-[#000000]"/></a>
+                            <a href="https://git-scm.com/" target="_blank"><FaGitAlt className="hover:text-[#e94e31]"/></a>
+                        </div>
                     </div>
-                    <div className="md:w-1/2 md:pl-20">
+                    <div className="w-full lg:w-1/2 lg:pl-20">
                         <div className="border-2 border-ternary w-full" data-aos="fade-left">
                             <img src="./Images/myPhoto.jpg" className="w-full" />
                         </div>
