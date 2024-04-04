@@ -39,7 +39,7 @@ const Projects = () => {
                     <img src="./Images/Projects/wizeAdminDashboard.png" className="w-full" />
                     <div className="bg-secondary p-10 pr-5">
                         <p className='h-[120px] overflow-hidden'> Wize Consult : Design, Admin Dashboard, Student portal, CMS </p>
-                        <p className="mt-5 text-[20px] mb-10 text-[rgb(200,200,200)] h-[85px] overflow-hidden"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas sapiente, dicta laborum debitis perferendis delectus, exercitationem sunt! tenetur alias possimus? </p>
+                        <p className="mt-5 text-[20px] mb-10 text-[rgb(200,200,200)] h-[85px] overflow-hidden"> Welcome to our comprehensive educational platform designed to streamline administration, enhance student engagement, and facilitate content management. Our website combines intuitive user interfaces with powerful backend systems to provide a seamless experience for administrators, students, and content creators alike. </p>
                         <button className="py-5 font-bold text-ternary uppercase text-[20px]">Project details</button>
                     </div>
                 </div>
@@ -47,7 +47,7 @@ const Projects = () => {
                     <img src="./Images/Projects/pokemon.png" className="w-full" />
                     <div className="bg-secondary p-10 pr-5">
                         <p className='h-[120px] overflow-hidden'> Pokemon : Light/Dark mode, Poke API implementation </p>
-                        <p className="mt-5 text-[20px] mb-10 text-[rgb(200,200,200)] h-[85px] overflow-hidden"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas sapiente, dicta laborum debitis perferendis delectus, exercitationem sunt! tenetur alias possimus? </p>
+                        <p className="mt-5 text-[20px] mb-10 text-[rgb(200,200,200)] h-[85px] overflow-hidden"> Embark on an exciting journey into the captivating world of Pokémon with this immersive website. We&apos;ve curated an experience that combines the nostalgia of the classic games and the excitement of modern technology. Dive into a vast collection of Pokémon information, powered by the PokeAPI, and explore a user-friendly interface designed to delight both seasoned trainers and newcomers alike.</p>
                         <button className="py-5 font-bold text-ternary uppercase text-[20px]">Project details</button>
                     </div>
                 </div>
@@ -55,7 +55,7 @@ const Projects = () => {
                     <img src="./Images/Projects/eventDashboard.png" className="w-full" />
                     <div className="bg-secondary p-10 pr-5">
                         <p className='h-[120px] overflow-hidden'> Event-Book : Socket Notification, Chat system, QR validation </p>
-                        <p className="mt-5 text-[20px] mb-10 text-[rgb(200,200,200)] h-[85px] overflow-hidden"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas sapiente, dicta laborum debitis perferendis delectus, exercitationem sunt! tenetur alias possimus? </p>
+                        <p className="mt-5 text-[20px] mb-10 text-[rgb(200,200,200)] h-[85px] overflow-hidden">Experience the pinnacle of event management with this cutting-edge platform designed to revolutionize the way you plan, book, and attend events. From seamless booking processes to real-time communication and secure validation, we&apos;ve got everything you need to ensure your event experience is nothing short of extraordinary. </p>
                         <button className="py-5 font-bold text-ternary uppercase text-[20px]">Project details</button>
                     </div>
                 </div>

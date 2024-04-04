@@ -9,6 +9,9 @@
 .animateTopDown{
     animation: topDown 3s linear infinite alternate;    
 }
+.animateTopDownSml{
+    animation: topDownSmall 3s linear infinite alternate;
+}
 .lineAnimation{
     animation: animateLine 3s linear infinite alternate;
 }
@@ -52,5 +55,13 @@ p{
     }
     100% {
         width: 30%;
+    }
+}
+@keyframes topDownSmall{
+    0%{
+        top:20%;
+    }
+    100%{
+        top:50%;
     }
 }

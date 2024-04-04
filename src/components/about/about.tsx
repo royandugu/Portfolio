@@ -64,7 +64,7 @@ const About = () => {
                         <ol>
                             <li data-aos="fade-right">Secondary School Leaving Certificate (SLC), GEMS School </li>
                             <li data-aos="fade-right">Higher Secondary Education (11th and 12th Grade), Himalayan White House, specializing in Physics, Science </li> 
-                            <li data-aos="fade-right">Bachelor's Degree in Software Engineering (Expected Graduation 2024), NCIT, affiliated with Pokhara University </li>
+                            <li data-aos="fade-right">Bachelor&apos;s Degree in Software Engineering (Expected Graduation 2024), NCIT, affiliated with Pokhara University </li>
                         </ol>
                         <p className="text-ternary mt-10" data-aos="fade-right"> - Techstack </p>
                         <div className='expertise gap-10 mt-5 flex flex-wrap text-white' data-aos="fade-right">

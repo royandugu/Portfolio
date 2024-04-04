@@ -31,7 +31,7 @@ const Hero = () => {
             <div ref={ref} className="flex flex-col md:flex-row md:items-center justify-between pt-40 md:pt-64 pb-10">
                 <div> 
                     <h1 data-aos="fade-right"> Royan</h1>
-                    <h1 data-aos="fade-right" className="leading-[50px] shadow-xl"> Dugu. </h1>
+                    <h1 data-aos="fade-right" className="leading-[50px]"> Dugu. </h1>
                     <div className="mt-10 h-[10px] bg-ternary lineAnimation" data-aos="fade-right" />
                     <div className="iconContainer mt-10 md:mt-32 flex gap-5" data-aos="fade-up">
                         <a href="https://www.facebook.com/royandugu123/" target="_blank"><FaFacebookSquare /></a>
@@ -47,7 +47,10 @@ const Hero = () => {
                     <Link href="./resume.pdf" download={"resume.pdf"}><p className="text-ternary cursor-pointer mt-11 underline" data-aos="fade-up"> Download CV </p></Link>
                 </div>
             </div>
-            <div className="absolute z-[-1] bottom-0 left-[15%] opacity-10 w-[40%] animateTopDown">
+            <div className="absolute z-[-1] hidden md:block bottom-0 left-[15%] opacity-10 w-[40%] animateTopDown">
+                <img src="./Images/myCartoon.png" className="w-full"/>
+            </div>
+            <div className="absolute z-[-1] top-[20%] block md:hidden left-[15%] opacity-10 w-full">
                 <img src="./Images/myCartoon.png" className="w-full"/>
             </div>
         </section>

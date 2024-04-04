@@ -12,12 +12,12 @@ const Footer = () => {
                     </Link>
                 </div> 
                 <div className="w-full md:w-1/2 lg:w-1/3 mt-10 md:mt-0 text-center flex-col items-center justify-center">
-                    <h5> Let's Talk ? </h5>
+                    <h5> Let&apos;s Talk ? </h5>
                     <div className="flex flex-wrap gap-5 mt-10 justify-center">
                         {menu.map((mn,index:number)=>(
-                            <div key={index} className="text-[rgb(200,200,200)]">
+                            <Link href={`#${mn.url}`} key={index} className="text-[rgb(200,200,200)] cursor-pointer">
                                 {mn.text}
-                            </div>
+                            </Link>
                         ))}
                     </div>
                 </div>
