@@ -36,7 +36,6 @@ const Page = () => {
   if (isLoading) return (
     <div className="h-[100vh] w-full flex flex-col justify-center items-center">
       <img src="./loader.svg"/>
-      <p className="mt-5"> Loading contents ..</p>
     </div>
   )
   else {

@@ -16,7 +16,7 @@ const About = () => {
     const contextContainer = useContext(context);
 
     const { ref, inView } = useInView({
-        threshold: 0.2,
+        threshold: 0.4,
     });
 
     useEffect(() => {
