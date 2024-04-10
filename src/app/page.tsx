@@ -43,13 +43,12 @@ const Page = () => {
       <main style={{ scrollBehavior: 'smooth' }}>
         <ContextState>
           <AosWrapper>
-            <Header />
+            <Header/>
             <Hero />
             <About />
             <HowIWork />
             <Services />
             <Projects />
-            <Footer />
           </AosWrapper>
         </ContextState>
       </main>
