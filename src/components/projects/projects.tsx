@@ -3,7 +3,7 @@
 import context from '@/context/context';
 import Link from 'next/link';
 
-import { useEffect, useContext, useRef } from 'react';
+import { useEffect, useContext, useRef, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { FaArrowLeft } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
@@ -91,6 +91,15 @@ const ProjectSix = () => {
 }
 
 
+const ProjectOneDetail=()=>{
+    return(
+        <div className=''>
+            
+        </div>
+    )
+}
+
+
 const Projects = () => {
     const slider = useRef<any>(null);
     const sliderMid = useRef<any>(null);
@@ -132,7 +141,7 @@ const Projects = () => {
 
 
     return (
-        <section id="projects" className="relative">
+        <section id="projects">
             <div ref={ref} className="flex items-center justify-between">
                 <div>
                     <p className="text-ternary" data-aos="fade-right"> Here are some of my </p>
@@ -185,7 +194,12 @@ const Projects = () => {
                     <ProjectSix />
                 </Slider>
             </div>
+            <div className='fixed bg-[rgba(0,0,0,.5)] inset-0 z-10'>
+            </div>
 
+            <div className='fixed top-[200px] bottom-[10vh] left-[10rem] right-[10rem] bg-primary z-20 border-2 border-ternary'>
+                <h1> Hello </h1>
+            </div>
         </section>
     )
 }
