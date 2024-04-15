@@ -90,7 +90,7 @@ export const ProjectTwoDescription = () => {
                     </li>
                 </ul>
             </div>
-        </div >
+        </div > 
     )
 }
 
