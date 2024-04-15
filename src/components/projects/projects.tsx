@@ -3,7 +3,7 @@
 import context from '@/context/context';
 import Link from 'next/link';
 
-import { useEffect, useContext, useRef, useState } from 'react';
+import { useEffect, useContext, useRef } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { FaArrowLeft } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
@@ -44,7 +44,7 @@ const ProjectThree = () => {
         <div className="w-full flex-shrink-0">
             <img src="./Images/Projects/threeJS.png" className="w-full" />
             <div className="bg-secondary p-10 pr-5">
-                <p className='h-[120px] overflow-hidden'> Virtual wear-on glasses prototype- Three.JS/Tensorflow </p>
+                <p className='h-[120px] overflow-hidden'> Virtual wear-on glasses prototype- Three.JS/Mediapipe </p>
                 <p className="mt-5 text-[20px] mb-10 text-[rgb(200,200,200)] h-[85px] overflow-hidden">In this project, I tried to understand the creation of a 3D glasses try-on application. Leveraging the powerful capabilities of both Three.js and TensorFlow, I was able to gasp the concept of rendering a glass over the face on the webcam. </p>
                 <Link href="/project/3" target='_blank'><button className="py-5 font-bold text-ternary uppercase text-[20px]">Project details</button></Link>
             </div>
@@ -76,29 +76,6 @@ const ProjectFive = () => {
         </div>
     )
 }
-const ProjectSix = () => {
-    return (
-        <div className="w-full flex-shrink-0">
-            <img src="./Images/Projects/koseli.png" className="w-full" />
-            <div className="bg-secondary p-10 pr-5">
-                <p className='h-[120px] overflow-hidden'>  Introducing Koseli: Your Ultimate Restaurant Management Solution </p>
-                <p className="mt-5 text-[20px] mb-10 text-[rgb(200,200,200)] h-[85px] overflow-hidden">The comprehensive restaurant management web application that revolutionizes the way you handle orders, manage inventory, and streamline operations. Crafted with precision and tailored for the modern restaurateur, Koseli offers an intuitive interface and robust features to empower both restaurant owners and their customers. </p>
-                <Link href="/project/6" target='_blank'><button className="py-5 font-bold text-ternary uppercase text-[20px]">Project details</button></Link>
-            
-            </div>
-        </div>
-    )
-}
-
-
-const ProjectOneDetail=()=>{
-    return(
-        <div className=''>
-            
-        </div>
-    )
-}
-
 
 const Projects = () => {
     const slider = useRef<any>(null);
@@ -161,8 +138,8 @@ const Projects = () => {
                         sliderSml?.current?.slickNext()
                     }}>
                         <FaArrowRight className="text-primary text-[20px]" />
-                    </div>
-                </div>
+                  </div>
+                </div> 
             </div>
             <div className="mt-14 hidden xl:block">
                 <Slider ref={slider} {...settings}>
@@ -171,7 +148,6 @@ const Projects = () => {
                     <ProjectThree />
                     <ProjectFour />
                     <ProjectFive />
-                    <ProjectSix />
                 </Slider>
             </div>
             <div className="mt-14 hidden md:block xl:hidden">
@@ -181,7 +157,6 @@ const Projects = () => {
                     <ProjectThree />
                     <ProjectFour />
                     <ProjectFive />
-                    <ProjectSix />
                 </Slider>
             </div>
             <div className="mt-14 block md:hidden">
@@ -191,14 +166,7 @@ const Projects = () => {
                     <ProjectThree />
                     <ProjectFour />
                     <ProjectFive />
-                    <ProjectSix />
                 </Slider>
-            </div>
-            <div className='fixed bg-[rgba(0,0,0,.5)] inset-0 z-10'>
-            </div>
-
-            <div className='fixed top-[200px] bottom-[10vh] left-[10rem] right-[10rem] bg-primary z-20 border-2 border-ternary'>
-                <h1> Hello </h1>
             </div>
         </section>
     )

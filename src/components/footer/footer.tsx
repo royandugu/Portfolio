@@ -22,7 +22,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="w-full mt-10 md:mt-0 md:w-1/3 flex justify-center md:justify-end">
-                    <button className=" bg-transparent border-2 border-[rgb(200,200,200)] text-[rgb(200,200,200)] px-5 py-3 uppercase font-bold"> Contact me </button>
+                    <a href="https://www.upwork.com/freelancers/~01befb09e93f0fff86?mp_source=share" target='_blank'><button className=" bg-transparent border-2 border-[rgb(200,200,200)] text-[rgb(200,200,200)] px-5 py-3 uppercase font-bold"> Hire me </button></a>
                 </div>
             </div>
 
