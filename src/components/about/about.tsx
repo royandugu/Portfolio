@@ -24,36 +24,6 @@ const About = () => {
     }, [inView])
 
 
-    const frameworkExpertise = [
-        {
-            name: "React.JS",
-            per: "90"
-        },
-        {
-            name: "NEXT.JS",
-            per: "70"
-        },
-        {
-            name: "Node.JS",
-            per: "50"
-        }
-    ]
-
-    const languageExpertise = [
-        {
-            name: "HTML/CSS",
-            per: "90"
-        },
-        {
-            name: "HTML/CSS",
-            per: "90"
-        },
-        {
-            name: "HTML/CSS",
-            per: "90"
-        }
-    ]
-
     return (
         <section>
             <div id="about" ref={ref} className="bg-secondary relative p-20 pl-10 pr-10 lg:pl-20 lg:pr-20 ">
@@ -77,7 +47,7 @@ const About = () => {
                     </div>
                     <div className="w-full lg:w-1/2 lg:pl-20">
                         <div className="border-2 border-ternary w-full" data-aos="fade-left">
-                            <img src="./Images/myPhoto.jpg" className="w-full" />
+                            <img src="./Images/myPhoto.jpg" className="w-full" alt='My picture'/>
                         </div>
                     </div>
                 </div>

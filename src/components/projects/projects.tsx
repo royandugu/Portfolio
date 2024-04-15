@@ -17,10 +17,10 @@ import "./projects.css"
 const ProjectOne = () => {
     return (
         <div className="w-full flex-shrink-0">
-            <img src="./Images/Projects/wizeAdminDashboard.png" className="w-full" />
+            <img src="./Images/Projects/wizeAdminDashboard.png" className="w-full" alt='Admin dashboard wize'/>
             <div className="bg-secondary p-10 pr-5">
                 <p className='h-[120px] overflow-hidden'> Wize Consult : Design, Admin Dashboard, Student portal, CMS </p>
-                <p className="mt-5 text-[20px] mb-10 text-[rgb(200,200,200)] h-[85px] overflow-hidden"> Welcome to our comprehensive educational platform designed to streamline administration, enhance student engagement, and facilitate content management. Our website combines intuitive user interfaces with powerful backend systems to provide a seamless experience for administrators, students, and content creators alike. </p>
+                <p className="mt-5 text-[20px] mb-10 text-[rgb(200,200,200)] h-[85px] overflow-hidden"> Empower your consultancy with a website that puts you in control. The user-friendly admin dashboard allows seamless content management. From updating services and team profiles to posting insightful articles, the platform ensures that your website remains current and reflective of your evolving consultancy offerings. </p>
                 <Link href="/project/1" target='_blank'><button className="py-5 font-bold text-ternary uppercase text-[20px]">Project details</button></Link>
             </div>
         </div>
@@ -29,10 +29,10 @@ const ProjectOne = () => {
 const ProjectTwo = () => {
     return (
         <div className="w-full flex-shrink-0">
-            <img src="./Images/Projects/pokemon.png" className="w-full" />
+            <img src="./Images/Projects/pokemon.png" className="w-full"  alt='Pokemon'/>
             <div className="bg-secondary p-10 pr-5">
                 <p className='h-[120px] overflow-hidden'> Pokemon : Light/Dark mode, Poke API implementation </p>
-                <p className="mt-5 text-[20px] mb-10 text-[rgb(200,200,200)] h-[85px] overflow-hidden"> Embark on an exciting journey into the captivating world of Pokémon with this immersive website. We&apos;ve curated an experience that combines the nostalgia of the classic games and the excitement of modern technology. Dive into a vast collection of Pokémon information, powered by the PokeAPI, and explore a user-friendly interface designed to delight both seasoned trainers and newcomers alike.</p>
+                <p className="mt-5 text-[20px] mb-10 text-[rgb(200,200,200)] h-[85px] overflow-hidden"> As a passionate developer, I am thrilled to showcase my creation – a dynamic and engaging Pokemon website that brings the magical world of Pokemon to life! Let&apos;s take a closer look at what makes this project stand out:</p>
                 <Link href="/project/2" target='_blank'><button className="py-5 font-bold text-ternary uppercase text-[20px]">Project details</button></Link>
             
             </div>
@@ -42,10 +42,10 @@ const ProjectTwo = () => {
 const ProjectThree = () => {
     return (
         <div className="w-full flex-shrink-0">
-            <img src="./Images/Projects/threeJS.png" className="w-full" />
+            <img src="./Images/Projects/threeJS.png" className="w-full" alt='Three js'/>
             <div className="bg-secondary p-10 pr-5">
                 <p className='h-[120px] overflow-hidden'> Virtual wear-on glasses prototype- Three.JS/Mediapipe </p>
-                <p className="mt-5 text-[20px] mb-10 text-[rgb(200,200,200)] h-[85px] overflow-hidden">In this project, I tried to understand the creation of a 3D glasses try-on application. Leveraging the powerful capabilities of both Three.js and TensorFlow, I was able to gasp the concept of rendering a glass over the face on the webcam. </p>
+                <p className="mt-5 text-[20px] mb-10 text-[rgb(200,200,200)] h-[85px] overflow-hidden">Developed to unlock the gateway to augmented reality fashion with GlassWear, a prototype designed to redefine how we interact with virtual garments. Seamlessly blending the boundaries between the physical and digital worlds, GlassWear offers users a glimpse into the future of personalized style and expression.</p>
                 <Link href="/project/3" target='_blank'><button className="py-5 font-bold text-ternary uppercase text-[20px]">Project details</button></Link>
             </div>
         </div>
@@ -54,10 +54,10 @@ const ProjectThree = () => {
 const ProjectFour = () => {
     return (
         <div className="w-full flex-shrink-0">
-            <img src="./Images/Projects/designersHub.png" className="w-full" />
+            <img src="./Images/Projects/designersHub.png" className="w-full"  alt='Designers hub'/>
             <div className="bg-secondary p-10 pr-5">
                 <p className='h-[120px] overflow-hidden'> Designers Hub: Elevating Interior Designing to Artistry </p>
-                <p className="mt-5 text-[20px] mb-10 text-[rgb(200,200,200)] h-[85px] overflow-hidden"> Designers Hub is to redefine interior designing as an art form and strive to blend aesthetics with practicality, creating spaces that not only delight the eyes but also enhance everyday living. The aim is to be the ultimate destination for anyone seeking inspiration, guidance, and expertise in interior design. </p>
+                <p className="mt-5 text-[20px] mb-10 text-[rgb(200,200,200)] h-[85px] overflow-hidden"> Transforming a vision into reality is at the core of my interior design websites. Through a powerful admin dashboard, the admin has the ability to customize every aspect of their website, ensuring it reflects their unique style and brand identity. From color schemes and fonts to layout arrangements, the possibilities are endless. </p>
                 <Link href="/project/4" target='_blank'><button className="py-5 font-bold text-ternary uppercase text-[20px]">Project details</button></Link>
             </div>
         </div>
@@ -66,10 +66,10 @@ const ProjectFour = () => {
 const ProjectFive = () => {
     return (
         <div className="w-full flex-shrink-0">
-            <img src="./Images/Projects/funtasticEvents.png" className="w-full" />
+            <img src="./Images/Projects/funtasticEvents.png" className="w-full" alt='Funtastic events'/>
             <div className="bg-secondary p-10 pr-5">
                 <p className='h-[120px] overflow-hidden'> Event-Book : Event sorting, listing via location and End user&apos;s perspective </p>
-                <p className="mt-5 text-[20px] mb-10 text-[rgb(200,200,200)] h-[85px] overflow-hidden">Experience the pinnacle of event management with this cutting-edge platform designed to revolutionize the way you plan, book, and attend events. From seamless booking processes to real-time communication and secure validation, we&apos;ve got everything you need to ensure your event experience is nothing short of extraordinary. </p>
+                <p className="mt-5 text-[20px] mb-10 text-[rgb(200,200,200)] h-[85px] overflow-hidden">Explore the future of event management with EventBooker, a cutting-edge platform designed to cater to the unique needs of both administrators and event organizers. Let&apos;s dive into the distinctive features that make this project stand out: </p>
                 <Link href="/project/5" target='_blank'><button className="py-5 font-bold text-ternary uppercase text-[20px]">Project details</button></Link>
             
             </div>

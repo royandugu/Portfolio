@@ -35,7 +35,7 @@ const Page = () => {
 
   if (isLoading) return (
     <div className="h-[100vh] w-full flex flex-col justify-center items-center">
-      <img src="./loader.svg"/>
+      <img src="./loader.svg" alt="Loader"/>
     </div>
   )
   else {

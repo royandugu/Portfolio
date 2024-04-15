@@ -21,11 +21,11 @@ const HowIWork=()=>{
             <h5 className="text-center"> How I Work <span className="text-ternary">?</span></h5>
             <div className="flex flex-col md:flex-row items-center gap-20 mt-20">
                 <div ref={ref} className="flex-1 w-1/2" data-aos="fade-right">
-                    <img src="./Images/collaboration.svg"/>
+                    <img src="./Images/collaboration.svg" alt='Requirement analysis svg'/>
                 </div>
                 <div className="flex-1" data-aos="fade-left">
                     <p className="text-[rgb(200,200,200)]"> - Requirement Analysis </p>
-                    <p className="mt-10"> This phase is a bridge between the your vision and the my execution. It involves comprehensive communication, understanding, and documentation of the your needs, preferences, and constraints. </p>
+                    <p className="mt-10"> This phase is a bridge between your vision and my execution. It involves comprehensive communication, understanding, and documentation of the your needs, preferences, and constraints. </p>
                 </div>
             </div>
 
@@ -35,13 +35,13 @@ const HowIWork=()=>{
                     <p className="mt-10"> Here I translate gathered requirements into tangible design elements, including system architecture, user interfaces, data models, and workflows. Ensure alignment with stakeholder expectations and industry best practices.</p>
                 </div>
                 <div className="w-1/2" data-aos="fade-left">
-                    <img src="./Images/design.svg"/>
+                    <img src="./Images/design.svg" alt='Design svg'/>
                 </div>
             </div>
 
             <div className="flex flex-col md:flex-row items-center gap-20 mt-20">
                 <div className="w-1/2" data-aos="fade-right">
-                    <img src="./Images/coding.svg"/>
+                    <img src="./Images/coding.svg" alt='Coding svg'/>
                 </div>
                 <div className="flex-1" data-aos="fade-left">
                     <p className="text-[rgb(200,200,200)]"> - Coding </p>
@@ -55,13 +55,13 @@ const HowIWork=()=>{
                     <p className="mt-10"> Here I execute test cases to validate that the system functions according to the specified requirements and user expectations. Verify correctness, completeness, and accuracy of system behavior across diverse scenarios.</p>
                 </div>
                 <div className="w-1/2" data-aos="fade-left">
-                    <img src="./Images/testing.svg"/>
+                    <img src="./Images/testing.svg" alt='Testing svg'/>
                 </div>
             </div>
 
             <div className="flex flex-col md:flex-row items-center gap-20 mt-20">
                 <div className="w-1/2" data-aos="fade-right">
-                    <img src="./Images/review.svg"/>
+                    <img src="./Images/review.svg" alt='Review svg'/>
                 </div>
                 <div className="flex-1" data-aos="fade-left">
                     <p className="text-[rgb(200,200,200)]"> - Deployement </p>

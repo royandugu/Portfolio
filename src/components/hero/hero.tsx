@@ -44,14 +44,14 @@ const Hero = () => {
                     <p className="text-[rgb(200,200,200)]" data-aos="fade-left"> - Introduction </p>
                     <h5 className="mt-6 leading-[50px] brk1:leading-[60px]" data-aos="fade-left"> Welcome to my World of Web Development Excellence </h5>
                     <p className="mt-6 text-[rgb(200,200,200)]" data-aos="fade-left"> With years of hands-on experience in the dynamic realm of web development, I specialize in creating robust, scalable, and visually stunning web applications.</p>
-                    <Link href="./resume.pdf" download={"resume.pdf"}><p className="text-ternary cursor-pointer mt-11 underline" data-aos="fade-up"> Download CV </p></Link>
+                    <Link href="./resume.pdf" download={"resume.pdf"} target="_blank"><p className="text-ternary cursor-pointer mt-11 underline" data-aos="fade-up"> Download CV </p></Link>
                 </div>
             </div>
             <div className="absolute z-[-1] hidden md:block bottom-0 left-[15%] opacity-10 w-[40%] animateTopDown">
-                <img src="./Images/myCartoon.png" className="w-full"/>
+                <img src="./Images/myCartoon.png" className="w-full" alt="My cartoon"/>
             </div>
             <div className="absolute z-[-1] top-[20%] block md:hidden left-[15%] opacity-10 w-full">
-                <img src="./Images/myCartoon.png" className="w-full"/>
+                <img src="./Images/myCartoon.png" className="w-full" alt="My cartoon"/>
             </div>
         </section>
     )
